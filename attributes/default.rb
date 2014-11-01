@@ -4,6 +4,6 @@ default['flexget']['cron'] = {
   'hour' => '*',
   'path' => nil,
   'mailto' => nil,
-  'user' => default['flexget']['user']
+  'user' => node['flexget']['user']
 }
 default['flexget']['use_transmissionrpc'] = false
