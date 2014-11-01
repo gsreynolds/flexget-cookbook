@@ -7,3 +7,4 @@ long_description 'Installs/Configures FlexGet'
 version          '0.1.0'
 
 depends 'python'
+depends 'cron'
