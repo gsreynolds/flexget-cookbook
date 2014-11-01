@@ -27,6 +27,10 @@ describe 'flexget::config' do
       })
   end
 
+  it 'creates config directory' do
+    expect(chef_run).to create_directory('/home/fauxhai/.flexget')
+  end
+
   it 'creates a template with attributes' do
       expect(chef_run).to create_template('/home/fauxhai/.flexget/config.yml').with(
         user:   'fauxhai',

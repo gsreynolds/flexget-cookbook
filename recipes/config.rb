@@ -21,6 +21,10 @@ end
 home = node['etc']['passwd'][user]['dir']
 config_dir = File.join(home, '.flexget')
 
+directory config_dir do
+  action :create
+end
+
 template File.join(config_dir, 'config.yml') do
   source 'config.yml.erb'
   owner node['flexget']['user']
@@ -28,7 +32,7 @@ template File.join(config_dir, 'config.yml') do
   backup false
   mode 00644
   variables(
-    'config' => config['hash']
+    :config => config['hash']
   )
   action :create
 end
