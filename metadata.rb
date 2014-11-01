@@ -1,7 +1,7 @@
 name             'flexget'
 maintainer       'The Authors'
 maintainer_email 'gsreynolds@gmail.com'
-license          'all_rights'
+license          'Apache 2.0'
 description      'Installs/Configures FlexGet'
 long_description 'Installs/Configures FlexGet'
 version          '0.1.0'
