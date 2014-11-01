@@ -6,3 +6,4 @@ default['flexget']['cron'] = {
   'mailto' => nil,
   'user' => default['flexget']['user']
 }
+default['flexget']['use_transmissionrpc'] = false
