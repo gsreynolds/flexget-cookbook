@@ -4,7 +4,7 @@ maintainer_email 'gsreynolds@gmail.com'
 license          'Apache 2.0'
 description      'Installs/Configures FlexGet'
 long_description 'Installs/Configures FlexGet'
-version          '0.1.0'
+version          '0.1.1'
 
 depends 'python'
 depends 'cron'
