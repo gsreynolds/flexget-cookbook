@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe 'flexget::default' do
   let(:chef_run) do
-    runner = ChefSpec::Runner.new(:platform => 'debian', :version => '7.5')
+    runner = ChefSpec::SoloRunner.new(:platform => 'debian', :version => '7.5')
     runner.converge(described_recipe)
   end
 
