@@ -9,6 +9,6 @@ cron_d 'flexget' do
   hour    node['flexget']['cron']['hour']
   path    node['flexget']['cron']['path'] if node['flexget']['cron']['path']
   mailto  node['flexget']['cron']['mailto'] if node['flexget']['cron']['mailto']
-  user    node['flexget']['cron_user']
+  user    node['flexget']['cron']['user']
   command '/usr/local/bin/flexget execute'
 end
